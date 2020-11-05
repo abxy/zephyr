@@ -1,0 +1,9 @@
+# Configuration options for 1-wire peripheral emulators
+
+# Copyright (c) 2020 Alexander Mihajlovic <a@abxy.se>
+# SPDX-License-Identifier: Apache-2.0
+
+config EMUL_DS18B20
+	bool "Emulate a Maxim DS18B20 temperature sensor"
+	help
+	  This is an emulator for the Maxim DS18B20 temperature sensor.

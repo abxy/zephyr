@@ -1,0 +1,26 @@
+
+&w1_0 {
+	ds18b20 {
+		status = "okay";
+		compatible = "maxim,ds18b20";
+		label = "DS18B20";
+	};
+
+	ds18b20_2 {
+		status = "okay";
+		compatible = "maxim,ds18b20";
+		label = "DS18B20_2";
+	};
+
+	ds18b20_3 {
+		status = "okay";
+		compatible = "maxim,ds18b20";
+		label = "DS18B20_3";
+	};
+
+	ds18b20_4 {
+		status = "okay";
+		compatible = "maxim,ds18b20";
+		label = "DS18B20_4";
+	};
+};

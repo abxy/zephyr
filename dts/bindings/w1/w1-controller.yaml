@@ -1,0 +1,12 @@
+# Copyright (c) 2017 I-SENSE group of ICCS
+# SPDX-License-Identifier: Apache-2.0
+
+# Common fields for 1-wire controllers
+
+include: base.yaml
+
+bus: w1
+
+properties:
+    label:
+      required: true

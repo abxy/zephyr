@@ -112,6 +112,12 @@
 		current-speed = <0>;
 	};
 
+	w1_0: w1 {
+		status = "okay";
+		compatible = "zephyr,w1-emul-controller";
+		label = "1WIRE_0";
+	};
+
 	rng: rng {
 		status = "okay";
 		compatible = "zephyr,native-posix-rng";

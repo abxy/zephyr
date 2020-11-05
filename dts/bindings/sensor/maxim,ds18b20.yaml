@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2020 Alexander Mihajlovic <a@abxy.se>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+description: Maxim DS18B20 Temperature Sensor
+
+compatible: "maxim,ds18b20"
+
+include: w1-device.yaml

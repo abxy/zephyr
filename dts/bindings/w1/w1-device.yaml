@@ -1,0 +1,12 @@
+# Copyright (c) 2020 Alexander Mihajlovic <a@abxy.se>
+# SPDX-License-Identifier: Apache-2.0
+
+# Common fields for 1-wire devices
+
+include: base.yaml
+
+on-bus: w1
+
+properties:
+    label:
+      required: true

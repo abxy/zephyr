@@ -1,0 +1,31 @@
+# 1-Wire configuration options
+
+# Copyright (c) 2020 Alexander Mihajlovic <a@abxy.se>
+# SPDX-License-Identifier: Apache-2.0
+
+#
+# W1 options
+#
+menuconfig W1
+	bool "1-Wire Drivers"
+	help
+	  Enable 1-Wire Driver Configuration
+
+if W1
+
+# Include these first so that any properties (e.g. defaults) below can be
+# overridden (by defining symbols in multiple locations)
+source "drivers/w1/Kconfig.ds2482"
+source "drivers/w1/Kconfig.w1_emul"
+
+config W1_INIT_PRIORITY
+	int "Init priority"
+	default 80
+	help
+	  1-wire device driver initialization priority.
+
+module = W1
+module-str = w1
+source "subsys/logging/Kconfig.template.log_config"
+
+endif # W1

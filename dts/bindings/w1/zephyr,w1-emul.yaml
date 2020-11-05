@@ -1,0 +1,5 @@
+description: Zephyr 1-Wire Emulation controller
+
+compatible: "zephyr,w1-emul-controller"
+
+include: w1-controller.yaml

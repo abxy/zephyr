@@ -1,0 +1,10 @@
+# Copyright (c) 2020 Alexander Mihalovic <a@abxy.se>
+# SPDX-License-Identifier: Apache-2.0
+
+config W1_EMUL
+	bool "1-wire emulator"
+	help
+	  Enable the 1-wire emulator driver. This is a fake driver in that it
+	  does not talk to real hardware. Instead it talks to emulation
+	  drivers that pretend to be devices on the emulated 1-wire bus. It is
+	  used for testing drivers for 1-wire devices.
